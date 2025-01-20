@@ -4,6 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/5c122f6877.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!-- Search Bar -->
+      <header>
+        <div class="search container">
+          <label for="search-bar"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
+          <input type="search" name="search-bar" id="search-bar" />
+        </div>
+      </header>
+      <!-- City/Temperature/Stats -->
+      <main>
+        <div class="title"></div>
+        <div class="info">
+          <div class="info-left">
+            <div class="temperature"></div>
+            <div class="unit"></div>
+          </div>
+          <div class="info-right">
+            <div class="info-bar"></div>
+            <div class="info-bar"></div>
+            <div class="info-bar"></div>
+          </div>
+        </div>
+      </main>
+      <!-- Gif Status -->
+      <div class="gif-container">
+        <img class="gif-status" id="gif-status" />
+      </div>
+    </div>
+  </body>
 </html>
