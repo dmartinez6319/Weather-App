@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  outline: 1px solid red;
+  /* overflow: hidden; */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("../banana.png");
+  background-size: cover;
+}
+
+.app-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 5rem;
+  margin: 100px auto 0 auto;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(50px);
+  min-width: min-content;
+  max-width: 50%;
+  min-height: 400px;
+  max-height: 400px
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-top: -20px;
+  gap: .5rem;
+  h1{
+    padding: .5rem;
+  }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    .container{
+        padding: 2rem;
+        max-height: max-content;
+    }
+    .info {
+        flex-direction: column;
+    }
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bolder;
+    
+}
+
+.info {
+    display: flex;
+    gap: 2vw;
+}
+
+.info-left {
+    display: flex;
+}
+
+.temperature {
+    font-size: 5rem;
+    padding: .5rem;
+}
+
+.unit {
+    font-size: .5rem;
+    font-size: 2rem;
+}
+
+.info-right {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    font-size: 1.2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+#search-bar {
+  all: unset;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+#search-button {
+  display: flex;
+  cursor: pointer;
+  font-size: larger;
+  padding: 0.5rem;
+}
+
+.gif-status {
+    width: 500px;
+    height: 300px;
+}
+

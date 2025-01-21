@@ -13,32 +13,39 @@
     <div class="container">
       <!-- Search Bar -->
       <header>
-        <div class="search container">
-          <label for="search-bar"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></label>
+        <div class = "app-name">
+          <h1>Weather App</h1>
+          <p>by daniel</p>
+        </div>
+        <div class="search-container">
+          <label for="search-bar">
+            <i class="fa-solid fa-magnifying-glass" id="search-button"></i>
+          </label>
           <input type="search" name="search-bar" id="search-bar" />
         </div>
       </header>
       <!-- City/Temperature/Stats -->
       <main>
-        <div class="title"></div>
-        <div class="info">
-          <div class="info-left">
-            <div class="temperature"></div>
-            <div class="unit"></div>
-          </div>
-          <div class="info-right">
-            <div class="info-bar"></div>
-            <div class="info-bar"></div>
-            <div class="info-bar"></div>
+        <div class="info-container">
+          <div class="title"></div>
+          <div class="info">
+            <div class="info-left">
+              <div class="temperature"></div>
+              <div class="unit"></div>
+            </div>
+            <div class="info-right">
+              <div class="info-condition"></div>
+              <div class="info-humidity"></div>
+              <div class="info-wind-speed"></div>
+            </div>
           </div>
         </div>
+
+        <!-- Gif Status -->
+        <div class="gif-container">
+          <img class="gif-status" id="gif-status" />
+        </div>
       </main>
-      <!-- Gif Status -->
-      <div class="gif-container">
-        <img class="gif-status" id="gif-status" />
-      </div>
     </div>
   </body>
 </html>
